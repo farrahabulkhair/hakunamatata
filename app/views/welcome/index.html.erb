@@ -6,29 +6,40 @@
   </head>
   <style type="text/css">
    body {
-     /*background-image:url("timon.jpg");*/
-     background-color: #2F4057;
-     z-index: -1;
-     opacity: 10%;
-     background-size: 100%;
+    background-image:url("timon+blue.jpg");
+    /*background-color: #2F4057;*/
+    z-index: -1;
+    opacity: 10%;
+    background-size: 100%;
     font-family: 'Dosis', sans-serif;
 
    }
    .center {
      position: fixed;
 
-      top: 15%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
 
+
+  }
+   .btn-lg {
+     color: white;
+   }
   </style>
   <body>
     <div class="center">
-      <h1 style="color: white; text-align: center; font-size: 40px; margin-top: 0px  ">
+      <h1 style="color: white; text-align: center; font-size: 50px;">
         h a k u n a m a t a t a
       </h1>
+      <h5 style="color: #13C95B; text-align: center; font-size: 18px;"> Taste the juice of your bugs.</h5>
     </div>
+    <img src="laptopabyad.png" style="margin-top: 4.5%; margin-left: 12%; position: fixed"/>
+    <div style="margin-left: 80%; margin-top: 2%">
+      <%= link_to "Sign in", '#', class: "btn btn-lg" %>
+      <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    </div>
+
 
 
 
