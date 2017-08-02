@@ -5,40 +5,82 @@
 
   </head>
   <style type="text/css">
-   body {
+
+   .header
+   {
+     height: 1000px;
+     width: 100%;
+     padding: 30px 0 30px;
     background-image:url("timon+blue.jpg");
-    /*background-color: #2F4057;*/
-    z-index: -1;
-    opacity: 10%;
+    background-repeat: no-repeat;
+    /*z-index: -1;*/
     background-size: 100%;
     font-family: 'Dosis', sans-serif;
 
    }
-   .center {
-     position: fixed;
-
+   .center
+   {
      top: 30%;
      left: 50%;
      transform: translate(-50%, -50%);
+  }
 
+  .laptop
+  {
+    margin-left: 20%;
+    margin-top: 17.6%;
 
   }
-   .btn-lg {
+
+  @media(max-width:1029px) {
+      .laptop {
+
+          display: none;
+      }
+  }
+   .btn-lg
+   {
      color: white;
    }
   </style>
   <body>
-    <div class="center">
-      <h1 style="color: white; text-align: center; font-size: 50px;">
-        h a k u n a m a t a t a
-      </h1>
-      <h5 style="color: #13C95B; text-align: center; font-size: 18px;"> Taste the juice of your bugs.</h5>
+
+    <!-- HEADER -->
+    <div class="row">
+      <div class="header container-fluid ">
+        <!-- SIGN UP -->
+        <div style="margin-left: 80%; margin-top: 2%" class="col-lg-3 col-md-3">
+          <%= link_to "Sign in", '#', class: "btn btn-lg" %>
+          <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+        </div>
+        <!-- END OF SIGN UP -->
+
+        <!-- TITLE -->
+        <div class="center col-lg-6 col-md-6 col-sm-6">
+          <h1 style="color: white; text-align: center; font-size: 50px;">
+            h a k u n a m a t a t a
+          </h1>
+          <h5 style="color: #13C95B; text-align: center; font-size: 30px;"> Taste the juice of your bugs.</h5>
+        </div>
+        <!-- END OF TITLE -->
+        <!-- LAPTOP IMG -->
+        <div class="laptop">
+          <img src="laptopabyad.png" class=""style=""/>
+        </div>
+
+        <!-- END OF IMG -->
+      </div>
     </div>
-    <img src="laptopabyad.png" style="margin-top: 4.5%; margin-left: 12%; position: fixed"/>
-    <div style="margin-left: 80%; margin-top: 2%">
-      <%= link_to "Sign in", '#', class: "btn btn-lg" %>
-      <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+
+
+    <!-- END OF HEADER -->
+
+    <!-- INFO -->
+    <div style="height: 500px">
+
     </div>
+    <!-- END OF INFO -->
+
 
 
 
