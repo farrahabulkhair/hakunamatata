@@ -1,35 +1,85 @@
 <html>
-  <link href="https://fonts.googleapis.com/css?family=Dosis:200,400" rel="stylesheet">
+
   <head>
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../../assets/stylesheets/bootstrap.min.css">
+    <script src="../../assets/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="../../assets/javascripts/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,400" rel="stylesheet">
   </head>
-  <style type="text/css">
 
+
+  <style type="text/css">
+    html, body{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+  }
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+
+  .fill {
+    height: 100%;
+  }
    .header
    {
-     height: 1000px;
-     width: 100%;
-     padding: 30px 0 30px;
+     margin: 0;
+     /*height: 1000px;*/
+     height: 80%;
+     /*padding: 30px 0 30px;*/
     background-image:url("timon+blue.jpg");
     background-repeat: no-repeat;
+    box-shadow: 100px 10px 100px rgba(200,200,200,0.6);
     /*z-index: -1;*/
-    background-size: 100%;
+    background-size: cover;
     font-family: 'Dosis', sans-serif;
-
    }
-   .center
-   {
-     top: 30%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+
+  .ver {
+    display: flex;
+    flex-direction: column;
   }
+
+  .hor {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .f-end-hor {
+    align-items: flex-end;
+  }
+
+  .f-end-ver {
+    justify-content: flex-end;
+  }
+
+  .f-center-hor {
+    align-items: center;
+  }
+
+  .f-center-ver {
+    justify-content: center;
+  }
+
+
+
+
 
   .laptop
   {
-    margin-left: 20%;
-    margin-top: 17.6%;
+    /*height: 50%;*/
+    /*margin-left: 20%;
+    margin-top: 16%;*/
+    /*margin: 0 auto;*/
 
+    /*position: sticky;*/
+    height:80%;
+    width: auto;
   }
 
   @media(max-width:1029px) {
@@ -46,29 +96,113 @@
   <body>
 
     <!-- HEADER -->
-    <div class="row">
-      <div class="header container-fluid ">
+    <!-- <div class=" container-fluid fill"> -->
+      <div class="header row">
         <!-- SIGN UP -->
-        <div style="margin-left: 80%; margin-top: 2%" class="col-lg-3 col-md-3">
-          <%= link_to "Sign in", '#', class: "btn btn-lg" %>
-          <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+        <div class="hor f-end-ver f-center-hor col-md-12 col-sm-12" >
+          <%= link_to "Sign in", '#', class: "btn btn-lg"%>
+          <!-- <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %> -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#signUpModal"> Sign up</button>
         </div>
+
+          <!-- SIGN IN MODAL -->
+          <!-- END SIGN IN MODAL -->
+
+          <!-- SIGN UP MODAL -->
+          <div id="signUpModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+
+                  <h4 class="modal-title" >SIGN UP</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+            </div>
+          <!-- END SIGN UP MODAL -->
+
         <!-- END OF SIGN UP -->
 
         <!-- TITLE -->
-        <div class="center col-lg-6 col-md-6 col-sm-6">
-          <h1 style="color: white; text-align: center; font-size: 50px;">
-            h a k u n a m a t a t a
-          </h1>
-          <h5 style="color: #13C95B; text-align: center; font-size: 30px;"> Taste the juice of your bugs.</h5>
+        <div class="ver f-end-ver col-lg-12 col-md-12 col-sm-12">
+          <div class=" header-text align-bottom ver">
+            <h1 style="color: white; text-align: center; font-size: 50px;">
+              h a k u n a m a t a t a
+            </h1>
+            <h5 style="color: #13C95B; text-align: center; font-size: 30px;"> Taste the juice of your bugs.</h5>
+          </div>
         </div>
         <!-- END OF TITLE -->
         <!-- LAPTOP IMG -->
-        <div class="laptop">
-          <img src="laptopabyad.png" class=""style=""/>
+        <div class="hor f-center-ver f-end-hor col-lg-12 col-md-12 " style="">
+          <img src="laptopabyad.png" class="laptop"style=""/>
         </div>
 
         <!-- END OF IMG -->
+      <!-- </div> -->
+    </div>
+
+    <!-- screen 1 -->
+    <div class="row">
+      <div class="col-md-8">
+
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
+    <!-- screen 2 -->
+    <div class="row">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-8">
+
+      </div>
+    </div>
+    <!-- screen 3 -->
+    <div class="row">
+      <div class="col-md-8">
+
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
+    <!-- Badges -->
+    <div class="row">
+      <!-- title -->
+      <div class="col-md-12">
+
+      </div>
+      <!-- badge 1 -->
+      <div class="col-md-2">
+
+      </div>
+      <!-- badge 2 -->
+      <div class="col-md-2">
+
+      </div>
+      <!-- badge 3 -->
+      <div class="col-md-2">
+
+      </div>
+      <!-- badge 4 -->
+      <div class="col-md-2">
+
+      </div>
+      <!-- badge 5 -->
+      <div class="col-md-2">
+
       </div>
     </div>
 
@@ -76,9 +210,9 @@
     <!-- END OF HEADER -->
 
     <!-- INFO -->
-    <div style="height: 500px">
+    <!-- <div style="height: 500px">
 
-    </div>
+    </div> -->
     <!-- END OF INFO -->
 
 
