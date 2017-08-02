@@ -30,7 +30,7 @@
    {
      margin: 0;
      /*height: 1000px;*/
-     height: 80%;
+    height: 800px;
      /*padding: 30px 0 30px;*/
     background-image:url("timon+blue.jpg");
     background-repeat: no-repeat;
@@ -66,8 +66,41 @@
     justify-content: center;
   }
 
+  .small {
+    width: 80%;
+    height: auto;
+  }
 
+  .one-fifth {
+    width: 20%;
+  }
 
+  .f-1  {
+    flex: 1;
+  }
+
+  .f-2  {
+    flex: 2;
+  }
+
+  .f-3  {
+    flex: 3;
+  }
+
+  .f-4  {
+    flex: 4;
+  }
+
+  .footer {
+    background-color: #2c3644;
+    height: 100px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: bold;
+  }
 
 
   .laptop
@@ -78,8 +111,23 @@
     /*margin: 0 auto;*/
 
     /*position: sticky;*/
-    height:80%;
-    width: auto;
+    /*height:80%;*/
+    /*width: auto;*/
+  }
+
+  .description {
+    padding: 150px 150px;
+  }
+
+  .screen-title {
+    font-weight: bold;
+    font-size: 25px;
+
+  }
+
+  .screen-text {
+    font-size: 20px;
+    padding-top: 10px;
   }
 
   @media(max-width:1029px) {
@@ -153,60 +201,113 @@
 
     <!-- screen 1 -->
     <div class="row">
-      <div class="col-md-8">
-
+      <div class="col-md-8 col-sm-12 ver">
+        <div class="description">
+          <div class="screen-title">
+            The standard Lorem Ipsum passage, used since the 1500s
+          </div>
+          <div class="screen-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-
+      <div class="col-md-4 col-sm-12 ">
+        <img class="small" src="Screen1.png" class="laptop"style=""/>
       </div>
     </div>
+    <hr />
     <!-- screen 2 -->
     <div class="row">
-      <div class="col-md-4">
-
+      <div class="col-md-4 col-sm-12">
+        <img class="small" src="Screen2.png" class="laptop"style=""/>
       </div>
-      <div class="col-md-8">
-
+      <div class="col-md-8 col-sm-12 ver">
+        <div class="description">
+          <div class="screen-title">
+            The standard Lorem Ipsum passage, used since the 1500s
+          </div>
+          <div class="screen-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
       </div>
     </div>
+    <hr />
+
     <!-- screen 3 -->
     <div class="row">
-      <div class="col-md-8">
-
+      <div class="col-md-8 col-sm-12 ver">
+        <div class="description">
+          <div class="screen-title">
+            The standard Lorem Ipsum passage, used since the 1500s
+          </div>
+          <div class="screen-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-
+      <div class="col-md-4 col-sm-12">
+        <img class="small" src="Screen3.png" class="laptop"style=""/>
       </div>
     </div>
+    <hr />
     <!-- Badges -->
-    <div class="row">
+    <div class="row hor f-center-ver">
       <!-- title -->
       <div class="col-md-12">
-
       </div>
-      <!-- badge 1 -->
-      <div class="col-md-2">
 
+      <!-- badge 1 -->
+      <div class="col-md-2 ver">
+        <img class="small" src="5 shebsheb.png" class="laptop"style=""/>
+        <div>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        </div>
       </div>
       <!-- badge 2 -->
-      <div class="col-md-2">
-
+      <div class="col-md-2 ver">
+        <img class="small" src="4 madrab.png" class="laptop"style=""/>
+        <div>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        </div>
       </div>
       <!-- badge 3 -->
-      <div class="col-md-2">
-
+      <div class="col-md-2 ver">
+        <img class="small" src="3 Bronze.png" class="laptop"style=""/>
+        <div>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        </div>
       </div>
       <!-- badge 4 -->
-      <div class="col-md-2">
-
+      <div class="col-md-2 ver">
+        <img class="small" src="2 Silver.png" class="laptop"style=""/>
+        <div>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        </div>
       </div>
       <!-- badge 5 -->
-      <div class="col-md-2">
-
+      <div class="col-md-2 ver">
+        <img class="small" src="1 gold.png" class="laptop"style=""/>
+        <div>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        </div>
       </div>
     </div>
 
-
+    <div class="footer row hor f-center-ver">
+      <div class="col-md-3">
+        Home
+      </div>
+      <div class="col-md-3">
+        Contact
+      </div>
+      <div class="col-md-3">
+        Help
+      </div>
+      <div class="col-md-3">
+        DEV
+      </div>
+    </div>
     <!-- END OF HEADER -->
 
     <!-- INFO -->
