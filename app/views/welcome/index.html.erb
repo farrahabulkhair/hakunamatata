@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../../assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/style.css">
     <script src="../../assets/javascripts/jquery-3.2.1.min.js"></script>
     <script src="../../assets/javascripts/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,400" rel="stylesheet">
@@ -12,313 +13,412 @@
 
 
   <style type="text/css">
-    html, body{
+
+    html, body
+    {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-  }
-  .container-fluid {
-    padding: 0;
-    margin: 0;
-  }
+    }
+    .container-fluid
+    {
+      padding: 0;
+      margin: 0;
+    }
 
-  .fill {
-    height: 100%;
-  }
-   .header
-   {
-     margin: 0;
-     /*height: 1000px;*/
-    height: 800px;
-     /*padding: 30px 0 30px;*/
-    background-image:url("timon+blue.jpg");
-    background-repeat: no-repeat;
-    box-shadow: 100px 10px 100px rgba(200,200,200,0.6);
-    /*z-index: -1;*/
-    background-size: cover;
-    font-family: 'Dosis', sans-serif;
-   }
+    .fill
+    {
+      height: 100%;
+    }
+    /* HEADER */
+     .header
+     {
+      margin: 0;
+      height: 940px;
+      background-image:url("timon+blue.jpg");
+      background-repeat: no-repeat;
+      box-shadow: 100px 10px 100px rgba(200,200,200,0.6);
+      background-size: cover;
+      font-family: 'Avenir-light', sans-serif;
+     }
 
-  .ver {
-    display: flex;
-    flex-direction: column;
-  }
+     .header-title
+     {
+       color: white;
+       text-align: center;
+       font-size: 50px;
+     }
 
-  .hor {
-    display: flex;
-    flex-direction: row;
-  }
+     .header-subtitle
+     {
+      color: #4AAF46;
+      text-align: center;
+      font-size: 20px;
+     }
+    /* END OF HEADER */
 
-  .f-end-hor {
-    align-items: flex-end;
-  }
+    .ver
+    {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .f-end-ver {
-    justify-content: flex-end;
-  }
+    .hor
+    {
+      display: flex;
+      flex-direction: row;
+    }
 
-  .f-center-hor {
-    align-items: center;
-  }
+    .f-end-hor
+    {
+      align-items: flex-end;
+    }
 
-  .f-center-ver {
-    justify-content: center;
-  }
+    .f-end-ver
+    {
+      justify-content: flex-end;
+    }
 
-  .small {
-    width: 80%;
-    height: auto;
-  }
+    .f-center-hor
+    {
+      align-items: center;
+    }
 
-  .one-fifth {
-    width: 20%;
-  }
+    .f-center-ver
+    {
+      justify-content: center;
+    }
 
-  .f-1  {
-    flex: 1;
-  }
+    .small
+    {
+      width: 80%;
+      height: auto;
+    }
 
-  .f-2  {
-    flex: 2;
-  }
+    .laptop
+    {
 
-  .f-3  {
-    flex: 3;
-  }
+    }
 
-  .f-4  {
-    flex: 4;
-  }
+    .description
+    {
+      padding: 150px 150px;
+      text-align: center;
+      padding-top: 450px;
+      font-family: 'Avenir-light', sans-serif;
+    }
 
-  .footer {
-    background-color: #2c3644;
-    height: 100px;
-    color: white;
-    margin-top: 20px;
-    text-align: center;
-    padding: 30px;
-    font-size: 16px;
-    font-weight: bold;
-  }
+    .screen-title
+    {
+      font-weight: bold;
+      font-size: 30px;
+    }
 
+    .screen-text
+    {
+      font-size: 25px;
+      padding-top: 10px;
+    }
+    .screen-image-right
+    {
+      padding-top: 100px;
+      padding-bottom: 70px;
+      align-items: center;
+      margin-left: 30px;
+    }
 
-  .laptop
-  {
-    /*height: 50%;*/
-    /*margin-left: 20%;
-    margin-top: 16%;*/
-    /*margin: 0 auto;*/
+    .screen-image-left
+    {
+      padding-top: 100px;
+      padding-bottom: 70px;
+      align-items: center;
+      margin-left: 100px;
+    }
 
-    /*position: sticky;*/
-    /*height:80%;*/
-    /*width: auto;*/
-  }
+    .badge-title
+    {
+      text-align: center;
+      padding-top: 40px;
+      font-family: 'Avenir-light', sans-serif;
+      font-weight: bold;
+      font-size: 50px;
+    }
+    .badge-subtitle
+    {
+      text-align: center;
+      padding-bottom: 50px;
+      font-family: 'Avenir-light', sans-serif;
+      font-size: 20px;
+    }
 
-  .description {
-    padding: 150px 150px;
-  }
+    .badge-info
+    {
+      width: 80%;
+      height: auto;
+      background-color: white;
+    }
+    .badge-name
+    {
+      text-align: center;
+      padding-top: 10px;
+      font-family: 'Avenir-light', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .badge-points
+    {
+      text-align: center;
+      font-family: 'Avenir-light', sans-serif;
+      font-size: 20px;
+      color: black;
+    }
+    .badge-description
+    {
+      text-align: center;
+      font-family: 'Avenir-light', sans-serif;
+      font-size: 20px;
+      color: grey;
+    }
 
-  .screen-title {
-    font-weight: bold;
-    font-size: 25px;
+    @media(max-width:1029px)
+    {
+        .laptop
+        {
 
-  }
+            display: none;
+        }
+    }
+     .btn-lg
+     {
+       color: white;
+     }
 
-  .screen-text {
-    font-size: 20px;
-    padding-top: 10px;
-  }
-
-  @media(max-width:1029px) {
-      .laptop {
-
-          display: none;
-      }
-  }
-   .btn-lg
-   {
-     color: white;
-   }
+     .footer
+     {
+       background-color: #2c3644;
+       height: 80px;
+       color: white;
+       margin-top: 20px;
+       text-align: center;
+       padding: 15px;
+       font-size: 16px;
+       font-weight: bold;
+     }
   </style>
   <body>
 
     <!-- HEADER -->
-    <!-- <div class=" container-fluid fill"> -->
+
       <div class="header row">
-        <!-- SIGN UP -->
+
+        <!-- SIGN UP + SIGN IN-->
         <div class="hor f-end-ver f-center-hor col-md-12 col-sm-12" >
           <%= link_to "Sign in", '#', class: "btn btn-lg"%>
-          <!-- <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %> -->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#signUpModal"> Sign up</button>
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal"> Sign up</button>
         </div>
-
-          <!-- SIGN IN MODAL -->
-          <!-- END SIGN IN MODAL -->
-
-          <!-- SIGN UP MODAL -->
-          <div id="signUpModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-
-                  <h4 class="modal-title" >SIGN UP</h4>
-                </div>
-                <div class="modal-body">
-                  <p>Some text in the modal.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-            </div>
-          <!-- END SIGN UP MODAL -->
-
-        <!-- END OF SIGN UP -->
+        <!-- END OF SIGN UP + SIGN IN -->
 
         <!-- TITLE -->
         <div class="ver f-end-ver col-lg-12 col-md-12 col-sm-12">
           <div class=" header-text align-bottom ver">
-            <h1 style="color: white; text-align: center; font-size: 50px;">
+            <h1 class="header-title">
               h a k u n a m a t a t a
             </h1>
-            <h5 style="color: #13C95B; text-align: center; font-size: 30px;"> Taste the juice of your bugs.</h5>
+            <h5 class="header-subtitle"> Report. Reward. Repeat.</h5>
           </div>
         </div>
         <!-- END OF TITLE -->
+
         <!-- LAPTOP IMG -->
-        <div class="hor f-center-ver f-end-hor col-lg-12 col-md-12 " style="">
-          <img src="laptopabyad.png" class="laptop"style=""/>
+        <div class="hor f-center-ver f-end-hor col-lg-12 col-md-12 ">
+          <img src=" Profile laptop.png" class="laptop"/>
         </div>
-
         <!-- END OF IMG -->
-      <!-- </div> -->
     </div>
+  <!-- END OF HEADER -->
 
-    <!-- screen 1 -->
+  <!-- SCREENS -->
+
+    <!-- SCREEN 1 -->
     <div class="row">
-      <div class="col-md-8 col-sm-12 ver">
+      <div class="col-md-6 col-sm-12 ver">
         <div class="description">
           <div class="screen-title">
-            The standard Lorem Ipsum passage, used since the 1500s
+            In-app integration
           </div>
           <div class="screen-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Apps that purchased hakunamatata will have it appear in their settings menu.
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 ">
-        <img class="small" src="Screen1.png" class="laptop"style=""/>
+      <div class="col-md-4 col-sm-12 screen-image-right">
+        <img class="small" src="Screen1.png" class="laptop"/>
       </div>
     </div>
     <hr />
-    <!-- screen 2 -->
+    <!-- END OF SCREEN 1 -->
+
+    <!-- SCREEN 2 -->
     <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <img class="small" src="Screen2.png" class="laptop"style=""/>
+      <div class="col-md-offset-2 col-md-4 col-sm-12 screen-image-left">
+        <img class="small laptop" src="Screen2.png"/>
       </div>
-      <div class="col-md-8 col-sm-12 ver">
+      <div class="col-md-6 col-sm-12 ver">
         <div class="description">
           <div class="screen-title">
-            The standard Lorem Ipsum passage, used since the 1500s
+            Sign in directly from the app
           </div>
           <div class="screen-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             Gather all your points in one place by connecting all your apps with your account.
+
           </div>
         </div>
       </div>
     </div>
     <hr />
+    <!-- END OF SCREEN 2 -->
 
-    <!-- screen 3 -->
+    <!-- SCREEN 3 -->
     <div class="row">
-      <div class="col-md-8 col-sm-12 ver">
+      <div class="col-md-6 col-sm-12 ver">
         <div class="description">
           <div class="screen-title">
-            The standard Lorem Ipsum passage, used since the 1500s
+            EARN POINTS!
           </div>
           <div class="screen-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Everytime you report a bug you earn a point, everytime your bug is fixed you earn 10 points!
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12">
+      <div class="col-md-4 col-sm-12 screen-image-right">
         <img class="small" src="Screen3.png" class="laptop"style=""/>
       </div>
     </div>
     <hr />
-    <!-- Badges -->
-    <div class="row hor f-center-ver">
-      <!-- title -->
-      <div class="col-md-12">
-      </div>
+    <!-- END OF SCREEN 3 -->
 
-      <!-- badge 1 -->
-      <div class="col-md-2 ver">
-        <img class="small" src="5 shebsheb.png" class="laptop"style=""/>
-        <div>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        </div>
+  <!-- END OF SCREENS -->
+
+
+  <!-- BADGES -->
+
+  <div class="row hor f-center-ver">
+    <!-- TITLE -->
+    <div class="col-md-12">
+      <div class="badge-title">
+        BADGES
       </div>
-      <!-- badge 2 -->
-      <div class="col-md-2 ver">
-        <img class="small" src="4 madrab.png" class="laptop"style=""/>
-        <div>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        </div>
+      <div class="badge-subtitle">
+        Collect more points to unlock more privileges.
       </div>
-      <!-- badge 3 -->
-      <div class="col-md-2 ver">
-        <img class="small" src="3 Bronze.png" class="laptop"style=""/>
-        <div>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    </div>
+    <!-- END OF TITLE -->
+
+    <!-- BADGE 1 -->
+    <div class="col-md-2 ver">
+      <img class="small" src="5 shebsheb.png" class="laptop"/>
+      <div class="badge-info">
+        <div class="badge-name">
+          Slipper
         </div>
-      </div>
-      <!-- badge 4 -->
-      <div class="col-md-2 ver">
-        <img class="small" src="2 Silver.png" class="laptop"style=""/>
-        <div>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        <div class="badge-points">
+          0 - 50
         </div>
-      </div>
-      <!-- badge 5 -->
-      <div class="col-md-2 ver">
-        <img class="small" src="1 gold.png" class="laptop"style=""/>
-        <div>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        <div class="badge-description">
+          This badge is khara
         </div>
       </div>
     </div>
+    <!-- END OF BADGE 1 -->
 
-    <div class="footer row hor f-center-ver">
-      <div class="col-md-3">
-        Home
-      </div>
-      <div class="col-md-3">
-        Contact
-      </div>
-      <div class="col-md-3">
-        Help
-      </div>
-      <div class="col-md-3">
-        DEV
+    <!-- BADGE 2 -->
+    <div class="col-md-2 ver">
+      <img class="small" src="4 madrab.png" class="laptop"style=""/>
+      <div class="badge-info">
+        <div class="badge-name">
+          Swatter
+        </div>
+        <div class="badge-points">
+          50 - 100
+        </div>
+        <div class="badge-description">
+          This badge is khara
+        </div>
       </div>
     </div>
-    <!-- END OF HEADER -->
+    <!-- END OF BADGE 2 -->
 
-    <!-- INFO -->
-    <!-- <div style="height: 500px">
+    <!-- BADGE 3 -->
+    <div class="col-md-2 ver">
+      <img class="small" src="3 Bronze.png" class="laptop"style=""/>
+      <div class="badge-info">
+        <div class="badge-name">
+          Spray
+        </div>
+        <div class="badge-points">
+          100 - 200
+        </div>
+        <div class="badge-description">
+          This badge is khara
+        </div>
+      </div>
+    </div>
+    <!-- END OF BADGE 3 -->
 
-    </div> -->
-    <!-- END OF INFO -->
+    <!-- BADGE 4 -->
+    <div class="col-md-2 ver">
+      <img class="small" src="2 Silver.png" class="laptop"style=""/>
+      <div class="badge-info">
+        <div class="badge-name">
+          Pumba
+        </div>
+        <div class="badge-points">
+          200 - 500
+        </div>
+        <div class="badge-description">
+          This badge is khara
+        </div>
+      </div>
+    </div>
+    <!-- END OF BADGE 4 -->
 
+    <!-- BADGE 5 -->
+    <div class="col-md-2 ver">
+      <img class="small" src="1 gold.png" class="laptop"style=""/>
+      <div class="badge-info">
+        <div class="badge-name">
+          Timon
+        </div>
+        <div class="badge-points">
+          500 - 1000
+        </div>
+        <div class="badge-description">
+          This badge is khara
+        </div>
+      </div>
+    </div>
+    <!-- END OF BADGE 5 -->
 
+  </div>
+  <!-- END OF BADGES -->
 
-
+  <!-- FOOTER -->
+  <div class="footer row hor f-center-ver">
+    <div class="col-md-1">
+      <%= link_to "Home", '#', class: "btn btn-lg"%>
+    </div>
+    <div class="col-md-1">
+      <%= link_to "Contact", '#', class: "btn btn-lg"%>
+    </div>
+    <div class="col-md-1">
+      <%= link_to "Help", '#', class: "btn btn-lg"%>
+    </div>
+    <div class="col-md-1">
+      <%= link_to "Developers", '#', class: "btn btn-lg"%>
+    </div>
+  </div>
+  <!-- END OF FOOTER -->
 
   </body>
 
